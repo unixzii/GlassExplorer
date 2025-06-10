@@ -8,7 +8,6 @@
 #import "_UIViewGlass.h"
 #import "UIView+GlassEffect.h"
 #import "UIGlassEffect+Glass.h"
-#import "CAFilter.h"
 
 #import "ViewController.h"
 #import "GlassExplorer-Swift.h"
@@ -43,11 +42,10 @@
     auto smallDetent =
         [UISheetPresentationControllerDetent customDetentWithIdentifier:@"smallDetent"
                                                                resolver:^CGFloat(id<UISheetPresentationControllerDetentResolutionContext> context) {
-            return context.maximumDetentValue * 0.2;
+            return context.maximumDetentValue * 0.3;
         }];
     sheetPresentationController.detents = @[
         smallDetent,
-        UISheetPresentationControllerDetent.mediumDetent,
         UISheetPresentationControllerDetent.largeDetent,
     ];
     sheetPresentationController.largestUndimmedDetentIdentifier = UISheetPresentationControllerDetentIdentifierLarge;
