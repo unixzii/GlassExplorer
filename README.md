@@ -2,7 +2,9 @@
 
 A fun little iOS app that plays around with UIKit's private glass effect APIs. Basically lets you mess with glass blur effects on views and see what happens.
 
-![Screenshot](./Artworks/Screenshot.png)
+<div align="center">
+    <img src="./Artworks/Screenshot.png" height=400>
+</div>
 
 ## What it does
 - Shows a draggable glass effect overlay
